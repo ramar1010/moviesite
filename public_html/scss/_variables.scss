@@ -1,0 +1,33 @@
+// Font family
+$font-base: 		'Open Sans', sans-serif;
+$font-hedding: 	'Barlow Semi Condensed', sans-serif;
+
+// Colors
+$body-color:#ffffff;
+$primary:	  #f6be00;
+$secondary:	#070709;
+$gray:      #303030;
+$white:	    #ffffff;
+$black:     #000000;
+$dark:      #0b0b0d;
+$yellow:    #f8b500;
+
+
+// SVG color
+$filter-1: invert(20%) sepia(63%) saturate(7292%) hue-rotate(355deg) brightness(106%) contrast(116%); // primary color
+
+// border color
+$border-color: 	     rgba($white, 0.1);
+$border-color-01: 	 rgba($white, 0.5);
+$border-color-02: 	 rgba($white, 0.03);
+
+
+// border radius
+$border-radius: 6px;
+$border-radius-md: 50px;
+$border-radius-full: 100px;
+
+// box shadow
+$box-shadow: 1px 1px 5px 1px rgba($secondary, 0.10);
+$box-shadow-sm:	0px 2px 5px 0px rgba($dark, .10);
+

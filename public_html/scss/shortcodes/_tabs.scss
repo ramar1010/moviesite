@@ -1,0 +1,112 @@
+/*****************************
+	Tabs
+*****************************/
+
+.tabs{
+	position: relative;
+	.nav{
+		border-bottom: 0px;
+		.nav-item{
+			margin-right: 10px;
+			.nav-link{
+				position: relative;
+				color: $white;
+				outline: none;
+				padding:11px 40px;
+				margin-bottom: 0;
+				font-size: 16px;
+				line-height: 26px;
+				font-weight: normal;
+				border: 1px solid $dark;
+				text-transform: capitalize;
+				font-family: $font-hedding;
+				background-color:$secondary;
+				border-radius: $border-radius-md;
+				transition: all .3s ease-in-out;
+				min-width: 110px;
+				&:focus{
+					color: $white;
+				}
+				&:focus-visible {
+					outline: none;
+				}
+				&:hover {
+					color: $dark;
+					background-color:$primary;
+					box-shadow: none;
+					outline: none;
+				}
+			}
+			.nav-link.active{
+				background-color: $primary;
+				color: $secondary;
+			}
+
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+.categories-tabs{
+	position: relative;
+	.tabs{
+		position: absolute;
+		right: 0;
+		top: 0;
+		.nav {
+			.nav-item {
+				.nav-link{
+					padding: 11px 30px;
+				}
+			}
+		}
+	}
+}
+
+
+/* Responsive */
+
+@media (max-width:991px) {
+	.categories-tabs.tabs{
+		.section-title.tabs-title{
+			.title{
+          width: 45%;
+			}
+			.nav {
+				.nav-item {
+					.nav-link{
+						padding: 8px 30px;
+					}
+				}
+			}
+		}
+	}
+	.nav.nav-tabs.nav-pills{
+     .nav-item{
+       margin-bottom: 5px;
+     }
+	}
+}
+
+@media (max-width:768px) {
+	.categories-tabs{
+	.tabs{
+		position: inherit;
+    margin-bottom: 20px;
+	}
+ }
+}
+
+@media (max-width:479px) {
+	.tabs {
+		.nav {
+			.nav-item{
+				.nav-link{
+					padding: 8px 30px;
+				}
+			}
+		}
+	}
+}

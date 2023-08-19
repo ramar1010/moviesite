@@ -1,0 +1,923 @@
+/*****************************
+    Banner
+*****************************/
+
+/*Banner 01*/
+.banner.banner-1{
+    background-color: $secondary;
+    padding-top: 100px;
+    .shape-01{
+      position: absolute;
+      bottom: 25%;
+      left: 10px;
+    }
+    .shape-02{
+      position: absolute;
+      top: 100px;
+      right: 10px;
+    }
+    &:before{
+     position: absolute;
+     background-color: $primary;
+     top: 0;
+     right: 0;
+     content: "";
+     width: 500px;
+     height: 100%;
+    }
+    .banner-img{
+        z-index: 9;
+        height: 618px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-size: cover;
+        background-position: -12px 0;
+        background-repeat: no-repeat;
+       .movie-details-info.movies-info{
+            .title{
+             letter-spacing: 4px;
+             font-size: 66px;
+            }
+          .btn.btn-primary{
+            color: $dark;
+          }
+       }
+    }
+  .btn.btn-link{
+    font-weight: 600;
+  }
+}
+
+/*Banner 02*/
+.banner.banner-2{
+  height: 900px;
+  padding-top: 100px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .movie-details-info {
+    z-index: 9;
+    position: relative;
+  }
+
+ &:before{
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    content: "";
+    z-index: 1;
+    margin: 0 auto;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    background: url('../images/banner/home-02/02.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .4s infinite;
+    
+  }
+  .movie-details-info.movies-info{
+    .title{
+      letter-spacing: 3px;
+    }
+    .features{
+      align-items: center;
+      margin: 35px 0px;
+    .user-score{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 15px;
+      span{
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+        background: transparent;
+        }
+      }
+      span{
+        width: 46px;
+        height: 46px;
+        background-color: $secondary;
+        font-size: 18px;
+        margin-right: 15px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+
+    h3{
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .author-info{
+      .author-details{
+       .author-designation{
+        display: inline-grid;
+        min-width: 200px;
+        font-size: 20px;
+        font-weight: 700;
+        span{
+          font-size: 16px;
+          font-weight: normal;
+        }
+       }
+      }
+    }
+    .link-btn{
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center;
+      .btn{
+        color: $white;
+        font-size: 24px;
+        font-weight: normal;
+        i{
+          padding-right: 15px;
+          padding-left: 0;
+        }
+
+        &:hover{
+          color: $primary;
+        }
+      }
+      a.add-icon{
+        margin-left: 40px;
+       color: $white;
+       font-size: 24px;
+       font-weight: normal;
+       &:before{
+        margin-right: 15px;
+        font-size: 24px;
+       }
+        &:hover{
+          color: $primary;
+        }
+      }
+      a.add-icon.active{
+         color: $primary;
+      }
+    }
+    ul{
+      padding: 0;
+      flex-wrap: wrap;
+        li{
+          list-style: disc;
+          margin-left: 25px;
+          &:first-child{
+            list-style: none;
+            margin-left: 0;
+          }
+        }
+       .year{
+          font-weight: normal;
+          font-size: 16px;
+          font-family: $font-base;
+          margin: 0;
+        }
+       .tag{
+          font-weight: normal;
+          text-transform: uppercase;
+          a{
+            color: $white;
+            letter-spacing: 2px;
+            &:hover{
+              color: $primary;
+            }
+          }
+        }
+       .time{
+          font-weight: normal;
+          font-size: 16px;
+          font-family: $font-base;
+        }
+     }
+     p{
+      margin-bottom: 30px;
+     }
+  }
+}
+.single-banner-info{
+   .title{
+      font-size: 60px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+   }
+   .imdb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+     img{
+      height: 30px;
+     }
+     span{
+      font-size: 22px;
+      line-height: 1;
+      font-family: $font-hedding;
+      font-weight: bold;
+      padding: 5px 10px;
+      background-color: $dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        color: $primary;
+        line-height: 1;
+        font-size: 16px;
+        margin-right: 8px;
+      }
+     }
+   }
+   .add-icon{
+      display: inline-grid;
+      font-size: 20px;
+      color: $white;
+      &:before{
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+
+   }
+   .add-icon:hover{
+     color: $primary;
+   }
+   .add-icon.active{
+     color: $primary;
+   }
+   .share-box{
+    a{
+      i{
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+      display: inline-grid;
+      font-size: 20px;
+    }
+    .share-box-social{
+      a{
+        i{
+          font-size: 16px;
+          transition: all .3s ease-in-out;
+          &:hover{
+            color: $dark;
+          }
+        }
+      }
+    }
+   }
+  }
+
+/*Movie Banner*/
+.movie-banner{
+  padding: 0 100px 50px;
+  #main-slider{
+    position: relative;
+  }
+  .swiper-slide{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .banner-title{
+      text-transform:uppercase;
+      font-size: 60px;
+      font-weight:700;
+      letter-spacing: 6px;
+      position: absolute;
+      top: 30px;
+      right: 40px;
+    }
+  }
+}
+
+/*Tv Banner*/
+.tv-banner{
+    padding-bottom: 50px;
+    .owl-carousel {
+      .owl-stage-outer{
+        overflow: visible;
+        .owl-item{
+          opacity: 0.30;
+        }
+        .owl-item.active{
+          opacity: 1;
+        }
+      }
+    }
+  .tv-slider{
+    height: 600px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    .single-banner-info{
+      width: 100%;
+      padding-bottom: 50px;
+      margin-top: auto;
+      .title{
+        margin-bottom: 30px;
+        color: $primary;
+      }
+      .imdb{
+        top: 0;
+        left: 30px;
+        position: absolute;
+      }
+      .show-title{
+        top: 23px;
+        right: 30px;
+        line-height: 1;
+        font-size: 50px;
+        position: absolute;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+/*Web Series Banner*/
+.web-series-banner{
+  padding: 0 100px 50px;
+
+  #main-slider{
+    position: relative;
+  }
+  .swiper-slide{
+    height: 600px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    text-align: left;
+    .banner-title{
+      text-transform:uppercase;
+      font-size: 60px;
+      font-weight:700;
+      letter-spacing: 6px;
+      position: absolute;
+      top: 30px;
+      right: 40px;
+
+    }
+    .title{
+      color: $primary;
+    }
+
+    .features{
+      margin-bottom: 40px;
+      .imdb{
+        margin: 0px;
+        margin-right: 10px;
+      }
+    }
+    .container-fluid {
+      margin-top: auto;
+    }
+  }
+  .single-banner-info{
+    margin-bottom: 50px;
+    .add-icon{
+      text-align: center;
+    }
+    .share-box{
+      text-align: center;
+    }
+  }
+
+  .swiper-pagination {
+    text-align: right;
+    left: inherit;
+    right: 40px;
+    width: auto;
+    .swiper-pagination-bullet{
+      width: 150px;
+      height: 100px;
+      background-image: url(../images/banner/web-series/pagination-02.jpg);
+      background-size: cover;
+      background-position: center;
+      &:first-child{
+        background-image: url(../images/banner/web-series/pagination-01.jpg);
+      }
+
+      &:last-child{
+        background-image: url(../images/banner/web-series/pagination-03.jpg);
+      }
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+      border: 5px solid rgba($white,0.5);
+    }
+
+  }
+}
+
+
+/*Home Landing*/
+.banner.home-landing{
+ height: 100vh;
+ padding-top: 100px;
+ display: flex;
+ align-items: center;
+ box-shadow: inset 140px 130px 90px 15px rgba(0,0,0,0.9);
+ .banner-info{
+  position: relative;
+   height: 100%;
+   align-items: center;
+   display: flex;
+   z-index: 9;
+   .banner-content{
+    .title{
+     margin-bottom: 30px;
+     font-size: 84px;
+     color: $white;
+     line-height: 100px;
+     span{
+        color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: $white;
+        letter-spacing: 5px;
+     }
+   }
+
+   p{
+     font-size: 20px;
+     line-height: 30px;
+     font-weight: normal;
+     font-family: $font-hedding;
+   }
+   .form-group{
+    position: relative;
+    margin-top: 50px;
+    .form-control{
+      background-color: $white;
+      border-color:$white;
+      color: $secondary;
+      height: 60px;
+      padding-right: 165px;
+      padding-left: 30px;
+      border-radius: 50px !important;
+    }
+    input::placeholder{
+      color: $secondary;
+    }
+    .btn.btn-primary{
+      position: absolute;
+      top: 50%;
+      right: 6px;
+      transform: translate(0, -50%);
+      color: $dark;
+     &:hover {
+      color: $white;
+      background-color:$primary;
+    }
+
+    &:focus {
+      color: $white;
+      background-color: $primary;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $primary;
+    }
+
+    &:after {
+      background-color: $dark;
+      transition: all 0.4s ease;
+      border-radius: $border-radius-md;
+    }
+
+    }
+   }
+  }
+ }
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+@media (max-width:1600px) {
+ .banner.banner-1 {
+    &:before{
+        width: 400px;
+    }
+  }
+}
+
+@media (max-width:1400px) {
+ .banner.banner-1 {
+    &:before{
+        width: 330px;
+    }
+  }
+}
+
+@media (max-width:1299px) {
+ .banner.banner-1 {
+    &:before{
+        width: 280px;
+    }
+  }
+}
+
+@media (max-width:1199px) {
+ .banner.banner-1 {
+    .banner-img{
+       height: 550px;
+       background-position: center right;
+    }
+     &:before{
+      width: 250px;
+    }
+  }
+
+  .banner.home-landing {
+    .banner-info {
+      .banner-content {
+        .title{
+          font-size: 65px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+
+  .web-series-banner{
+    padding: 0 30px 40px;
+    .swiper-pagination{
+      .swiper-pagination-bullet{
+        width: 100px;
+        height: 70px;
+      }
+    }
+  }
+}
+@media (max-width:1100px) {
+  .banner.banner-1:before {
+    width: 220px;
+ }
+}
+
+@media (max-width:1024px) {
+ .banner.banner-1 {
+    &:before{
+        width: 180px;
+    }
+  }
+}
+
+@media (max-width:991px) {
+ .banner.banner-1 {
+     padding-top: 70px;
+    .banner-img{
+       height: 500px;
+       background-position: 80px;
+       .movies-info {
+        .title{
+          font-size: 48px !important;
+        }
+      .author-info{
+        margin-bottom: 20px;
+        .author-details{
+          margin-bottom: 10px;
+        }
+       }
+        p{
+          margin-bottom: 10px;
+        }
+      }
+     }
+    &:before{
+        width: 350px;
+    }
+  }
+  .banner.home-landing {
+    padding-top: 85px;
+  .banner-info {
+    .banner-content {
+      .title{
+        font-size: 60px;
+        line-height: 75px;
+        margin-bottom: 20px;
+      }
+
+      .form-group{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.banner.banner-2{
+   height: 730px;
+  .movie-details-info.movies-info {
+   .title{
+    font-size: 40px;
+   }
+  }
+ }
+
+ .single-banner-info {
+  .show-title{
+      font-size: 36px !important;
+    }
+    .title{
+      font-size: 50px !important;
+      letter-spacing: 4px;
+    }
+  }
+
+  .tv-banner {
+    .tv-slider{
+      height: 460px;
+    }
+  }
+
+  .web-series-banner{
+    .swiper-slide{
+      align-items: center;
+    }
+    .single-banner-info{
+      margin-bottom: 0;
+    }
+  } 
+}
+
+@media (max-width:767px) {
+ .banner.banner-1 {
+   padding-top: 100px;
+  .banner-img{
+     background-image: none !important;
+       .movies-info {
+        .title{
+          font-size: 36px !important;
+          letter-spacing: 2px !important;
+        }
+        margin-bottom: 30px;
+      }
+    }
+    &:before{
+      width: 45%;
+    }
+  }
+  .banner.banner-2{
+   height: 550px;
+  .movie-details-info.movies-info {
+   .title{
+    font-size: 34px;
+   }
+   p{
+    display: none;
+   }
+   .overview{
+    display: none;
+   }
+  }
+ }
+ .banner.home-landing{
+   padding: 140px 0 100px;
+   height: inherit;
+   .banner-info {
+    .banner-content {
+      .title {
+        span{
+          -webkit-text-stroke-width: 2px;
+          letter-spacing: 3px;
+        }
+      }
+     }
+   }
+ }
+
+  .single-banner-info {
+  .show-title{
+      font-size: 30px !important;
+      letter-spacing: 3px !important;
+    }
+    .title{
+      font-size: 36px !important;
+      letter-spacing: 3px !important;
+    }
+  }
+
+  .tv-banner {
+    .tv-slider{
+      height: 400px;
+      .single-banner-info{
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .movie-banner {
+    padding: 0 12px;
+
+    .swiper-slide{
+      height: 400px;
+      .banner-title{
+        font-size: 36px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .web-series-banner{
+    .swiper-slide {
+      height: 450px;
+      .banner-title{
+        font-size: 36px;
+        letter-spacing: 3px;
+        top: 20px;
+        right: 20px;
+      }
+      .features {
+        margin-bottom: 20px;
+      }
+    }
+    .swiper-pagination{
+      right: 20px;
+      bottom: 15px;
+    }
+  }
+
+}
+
+@media (max-width:575px) {
+ .banner.banner-1 {
+    &:before{
+        display: none;
+    }
+    .btn-link.text-dark{
+       color: $white !important;
+       &:hover{
+        color: $primary !important;
+       }
+    }
+  }
+.banner.home-landing {
+  .banner-info {
+    .banner-content {
+      .title{
+        font-size: 42px;
+        line-height: 57px;
+      }
+    }
+  }
+ }
+ .banner.banner-2 {
+  .movie-details-info.movies-info {
+  .title{
+    font-size: 26px;
+    line-height: 36px;
+   }
+    .features{
+       margin: 15px 0px;
+       span{
+        margin-right: 6px;
+       }
+     }
+    .author-info {
+      .author-details {
+        .author-designation{
+          min-width: 130px;
+        }
+      }
+    }
+    .link-btn {
+      margin-bottom: 10px;
+      .btn{
+        font-size: 18px;
+      }
+      a.add-icon{
+        font-size: 18px;
+        &:before{
+          font-size: 18px;
+        }
+      }
+    }
+    ul{
+      li{
+        &:first-child{
+          list-style: disc;
+          margin-left: 20px;
+        }
+        margin-left: 20px;
+      }
+    }
+    p{
+      margin-bottom: 15px;
+    }
+  }
+ }
+  .banner.home-landing{
+   padding: 120px 0 80px;
+   height: inherit;
+ }
+}
+
+@media (max-width:479px) {
+ .single-banner-info {
+  .show-title{
+    font-size: 24px !important;
+    right: 20px !important;
+  }
+  .title{
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  .share-box {
+    a{
+      font-size: 14px;
+      i{
+        font-size: 14px;
+      }
+    }
+  }
+  .add-icon{
+    font-size: 14px;
+    &::before{
+      font-size: 14px;
+    }
+  }
+ }
+
+ .tv-banner {
+  .tv-slider {
+    height: 320px;
+    .single-banner-info{
+       .imdb{
+          margin-top: 20px;
+          left: 20px;
+       }
+     }
+   }
+  }
+
+  .movie-banner {
+    padding: 0 12px;
+
+    .swiper-slide{
+      height: 320px;
+      .banner-title{
+        font-size: 30px;
+        letter-spacing: 2px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet{
+      width: 40px;
+    }
+  }
+
+  .web-series-banner{
+    padding: 0 12px 30px;
+    .swiper-slide {
+      height: 350px;
+      .banner-title{
+        font-size: 30px;
+        letter-spacing: 2px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+    .single-banner-info{
+      .add-icon:before{
+        font-size: 16px;
+      }
+
+      .btn{
+        padding: 12px 20px;
+      }
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet{
+        width: 75px;
+        height: 45px;
+      }
+    } 
+  }
+}

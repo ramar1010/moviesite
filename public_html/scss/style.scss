@@ -1,0 +1,92 @@
+/*
+Template: 4K Star - Entertainment HTML5 Template
+Version: 1.0.0
+Author: potenzaglobalsolutions
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+*/
+
+/*==============================================
+[  Table of contents  ]
+================================================
+:: Helpers
+:: Typography 
+:: Shortcodes
+	- Accordion
+	- Blog
+	- Button
+	- Countdown
+	- Counter
+	- Datetimepicker
+	- Feature Info
+	- Movie
+	- My Account
+	- Owl Carousel
+	- Pagination
+	- Pie Chart
+	- Pricing Table
+	- Sidebar
+	- Tabs
+	- Team
+	- Testimonial
+:: Header
+  - Header
+  - Header Style 01
+  - Header Style 02
+  - Header transparent
+:: Banner
+  - Banner 01
+  - Banner 02
+  - Movie Banner
+  - Tv Banner
+  - Web Series Banner
+  - Home Landing
+:: Layout
+  - Section Title
+  - Share Box
+  - Form
+  - Search
+  - Callout
+  - Back To Top
+  - List
+:: Footer
+  - Footer
+  - Footer Style 02
+
+
+
+======================================
+[ End table content ]
+======================================*/
+
+// Core files
+@import "variables";
+@import "helpers";
+@import "typography";
+@import "layout";
+
+// Shortcodes
+@import "shortcodes/accordion";
+@import "shortcodes/blog";
+@import "shortcodes/button";
+@import "shortcodes/countdown";
+@import "shortcodes/counter";
+@import "shortcodes/datetimepicker";
+@import "shortcodes/feature-info";
+@import "shortcodes/movie";
+@import "shortcodes/my-account";
+@import "shortcodes/owl-carousel";
+@import "shortcodes/pagination";
+@import "shortcodes/pie-chart";
+@import "shortcodes/pricing";
+@import "shortcodes/sidebar";
+@import "shortcodes/tabs";
+@import "shortcodes/team";
+@import "shortcodes/testimonial";
+
+// Structure
+@import "header";
+@import "banner";
+
+// Pages
+@import "footer";

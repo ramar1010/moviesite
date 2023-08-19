@@ -1,0 +1,59 @@
+/*****************************
+  pagination
+*****************************/
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+	.page-item {
+		margin: 0 5px;
+		font-size: 18px;
+		font-weight: 500;
+		.page-link {
+			padding: 4px 12px;
+	    border-radius: 0px;
+	    font-size: 16px;
+	    line-height: 20px;
+	    font-weight: 500;
+	    font-family: $font-hedding;
+	    border: none;
+	    color: $primary;
+	    background: transparent;
+	    border: 1px solid $primary;
+	    transition: all 0.3s ease-in-out;
+	    &:focus{
+	    	box-shadow: inherit;
+	    }
+	    i {
+	    	color: $white;
+	    	font-weight: 600;
+	    }
+	    &:hover{
+	    	color: $white;
+	    	background-color: $primary;
+	    }
+		}
+	}
+	.page-item.active {
+		.page-link {
+			color: $white;
+	    background-color: $primary;
+		}
+	}
+}
+
+@media (max-width:399px) {
+
+	.pagination {
+		.page-item {
+			margin: 0 7px;
+    	font-size: 16px;
+			.page-link{
+				padding: 8px 12px;
+    		font-size: 16px;
+			}
+		}
+		
+	}
+}

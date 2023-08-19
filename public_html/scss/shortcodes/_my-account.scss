@@ -1,0 +1,195 @@
+/*****************************
+  My Account
+*****************************/
+
+.my-account{
+	padding: 50px;
+	background: $dark;
+	.profile-side-bar{
+	 padding-right: 30px;
+	.profile-info{
+	 padding-bottom: 40px;
+	 border-bottom: 2px solid rgba($white, 0.1);
+	.profile-avatar{
+		 padding: 7px;
+     width: 140px;
+		 height: 140px;
+		 background: $dark;
+		 position: relative;
+		 border: 4px solid $primary;
+		 border-radius: $border-radius-full;
+  
+		img{
+			 border-radius: $border-radius-full;
+		}
+		i{
+			width: 30px;
+			height: 30px;
+			top: 20px;
+			right: -8px;
+			display: flex;
+			color: $dark;
+			font-size: 14px;
+			cursor: pointer;
+			position: absolute;
+			align-items: center;
+			border: 1px solid $dark;
+			justify-content: center;
+			background: $primary;
+			border-radius: $border-radius-full;
+		}
+	}
+	.title{
+		font-size: 20px;
+		font-weight: 700;
+		margin: 20px 0 10px;
+	}
+	span{
+		font-size: 14px;
+	}
+ }
+ .profile-tabs{
+ 	margin-top: 30px;
+ 	.nav {
+ 		.nav-item{
+ 			margin: 0 0 15px;
+ 			.nav-link{
+        text-align: left;
+        background: $dark;
+        width: 100%;
+        i{
+        	margin-right: 15px;
+        }
+        &:hover{
+        	background: $primary;
+        }
+ 			}
+ 			.nav-link.active{
+        background: $primary;
+ 			}
+ 		}
+ 	 }
+  }
+ }
+}
+
+.subscriptions-info{
+	height: 100%;
+	padding: 50px;
+	margin-left: 40px;
+	background: $secondary;
+	table.subscriptions-info-table{
+		margin: 40px 0 0;
+    tbody{
+    	tr{
+        border-bottom: 1px solid rgba($white, 0.1);
+        background-color: transparent;
+    		td{
+    			padding: 25px;
+    			background-color: transparent;
+    		}
+    	}
+    	tr.table-active{
+        background-color: $dark;
+        --bs-table-accent-bg: transparent ;
+        td{
+    			background-color: $dark;
+    		}
+    	}
+    }
+	}
+}
+
+.edit-form{
+	form{
+		.form-control{
+			background: $dark;
+			color: $white;
+		}
+	}
+}
+
+.payment-info{
+	padding: 20px;
+	background: $dark;
+	.payment-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba($white, 0.1);
+    h6{
+    	margin-right: 10px;
+    }
+    .payment-card{
+    	display: flex;
+    	margin-left: auto;
+    	img{
+    		margin-left: 5px;
+    	}
+    }
+	}
+}
+
+
+@media (max-width: 991px) {
+   .my-account{
+     padding: 30px;
+     .profile-side-bar{
+     	padding-right: 20px;
+     }
+
+     .profile-tabs.tabs{
+     	.nav{
+     		.nav-item {
+     			.nav-link{
+     				padding: 11px 20px;
+     			}
+     		}
+     	} 
+     }
+   }
+   .subscriptions-info{
+    margin-left: 20px;
+    padding: 25px;
+    table.subscriptions-info-table {
+    	tbody {
+    		tr {
+    			td{
+    				padding: 15px;
+    			}
+    		}
+    	}
+    }
+   }
+}
+
+@media (max-width: 767px) {
+  .my-account{
+  	.subscriptions-info{
+	  	margin-top: 30px;
+	    margin-left: 0;
+	    height: auto;
+	  }
+	  .profile-side-bar{
+	  	padding-right: 0;
+	  }
+	  .border-left{
+	    border-left: inherit;
+	  }
+  }
+}
+
+
+@media (max-width: 575px) {
+
+	.payment-info {
+		.payment-header{
+			display: block;
+			h6{
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

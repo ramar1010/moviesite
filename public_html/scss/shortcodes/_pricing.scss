@@ -1,0 +1,337 @@
+/*****************************
+  Pricing Table
+*****************************/
+
+  .pricing-header{
+    text-align: center;
+    .pricing-title{
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .pricing-price{
+      font-size: 18px;
+      font-family: $font-hedding;
+      color: $secondary;
+      background: $white;
+      font-weight: 500;
+      padding:8px 10px;
+      span{
+        font-size: 24px;
+        padding-right:5px;
+      }
+
+      .monthly-price,
+      .yearly-price{
+        text-transform:capitalize;
+      }
+
+      .yearly-price{
+        display: none;
+      }
+      .monthly-price{
+        display: block;
+      }
+    }
+    .pricing-price.change-pricing-price{
+      .yearly-price{
+        display: block;
+      }
+      .monthly-price{
+        display: none;
+      }
+    }
+  }
+
+.pricing-tab {
+  span {
+    vertical-align: middle;
+  }
+  .monthly-tab {
+    font-size: 20px;
+    font-family: $font-hedding;
+    font-weight: 500;
+    color: $white;
+    text-transform:uppercase;
+  }
+  .yearly-tab {
+    font-size: 20px;
+    font-family: $font-hedding;
+    font-weight: 500;
+    color: $white;
+    text-transform:uppercase;
+  }
+  .pricing-tab-switcher {
+    height: 26px;
+    width: 54px;
+    background: $primary;
+    display: inline-block;
+    border-radius: $border-radius-md;
+    position: relative;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    border: 1px solid $primary;
+    cursor: pointer;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -4px;
+      background: $white;
+      width: 31px;
+      height: 31px;
+      border-radius: $border-radius-full;
+      transition: all 0.3s ease;
+    }
+  }
+  .pricing-tab-switcher.active {
+    &:before {
+      left: calc(100% - 29px);
+    }
+  }
+}
+
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin: 0px 15px;
+  position: relative;
+  .switch-btn {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 18px;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+  input {
+    display: none;
+  }
+}
+.pricing{
+  .pricing-header{
+    padding: 50px 30px 20px;
+  }
+  .pricing-header.pricing-titel-header{
+    padding:68px 40px 68px;
+    text-align: left;
+  }
+  .pricing-body{
+    ul{
+      margin-bottom: 0px;
+      li{
+        text-align: center;
+        border-top: 1px solid rgba($white,0.1);
+        font-size: 24px;
+        color: $white;
+        font-family: $font-hedding;
+        padding: 12px 20px;
+      }
+    }
+    .pricing-titel-list{
+      li{
+        text-align: left;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 16px 40px;
+      }
+    }
+  }
+
+  .pricing-footer{
+    border-top: 1px solid rgba($white,0.1);
+    padding: 40px 20px;
+    text-align: center;
+    .btn{
+      background-color:  $secondary;
+      color: $white;
+      font-weight: 500;
+      &:hover{
+        background-color:$secondary;
+         color: $dark;
+      }
+    }
+
+    .btn-dark.btn{
+      background-color:  $dark;
+      color: $white;
+      i{
+        padding-right: 0;
+        padding-left: 10px;
+      }
+      &:hover{
+        color: $dark;
+      }
+    }
+  }
+  .pricing-footer.pricing-titel-footer{
+    text-align: left;
+    padding: 40px 40px;
+
+    .btn{
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}
+
+.pricing.active{
+  background-color: $secondary;
+  .pricing-footer{
+    .btn{
+      background-color:  $primary;
+      color: $secondary;
+
+      &:hover {
+        color:$secondary;
+        background-color:$primary;
+      }
+
+      &:after {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width:1399px) {
+
+  .pricing{
+    .pricing-header.pricing-titel-header{
+      padding: 54px 20px;
+      .pricing-tab{
+        .yearly-tab{
+         line-height: 29px;
+        }
+      }
+    }
+    .pricing-body{
+      .pricing-titel-list{
+        li{
+          padding: 16px 20px;
+        }
+      }
+    }  
+    .pricing-footer {
+      .btn-dark.btn{
+        padding: 13px 30px;
+      }
+    }
+
+    .pricing-footer.pricing-titel-footer{
+      padding: 40px 20px;
+    }
+  } 
+}
+
+
+@media (max-width:1199px) {
+ .pricing {
+    .pricing-header{
+      padding: 30px 20px 20px;
+      .pricing-title{
+        font-size: 22px;
+        margin-bottom: 18px;
+      }
+    }
+    .pricing-header.pricing-titel-header{
+      padding: 44px 20px 44px;
+    }
+    .pricing-footer{
+      padding:20px 20px;
+    }  
+    .pricing-footer.pricing-titel-footer{
+      padding: 20px 20px;
+      .btn-dark.btn{
+        padding: 13px 15px;
+        i{
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:991px) {
+  .pricing {
+    border: 1px solid rgba($white,0.1);
+    .pricing-header{
+      padding: 25px 20px; 
+    }
+    .pricing-header.pricing-titel-header{
+      padding: 25px 20px;
+      text-align: center;
+    }
+    .pricing-body{
+      ul{
+        li{
+          position: relative;
+          text-align: right;
+          &:before{
+            content: attr(data-label);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            float: left;
+            font-size: 18px;
+            font-weight: normal;
+            color: $white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    } 
+    .pricing-footer.pricing-titel-footer{
+      padding:30px;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .pricing {
+    .pricing-header.pricing-titel-header{
+      text-align: center;
+    }
+
+    .pricing-footer.pricing-titel-footer{
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width:479px) {
+  .pricing-tab{
+    .monthly-tab{
+      font-size: 14px;
+    }
+    .pricing-tab-switcher{
+      height: 20px;
+      width: 40px;
+      margin: 0 8px;
+
+      &:before{
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .pricing-tab-switcher.active{
+      &:before{
+        left: calc(100% - 23px);
+      }
+    }
+
+    .yearly-tab{
+      font-size: 14px;
+    }
+  } 
+
+}

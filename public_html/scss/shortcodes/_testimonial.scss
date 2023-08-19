@@ -1,0 +1,72 @@
+/*****************************
+  Testimonial
+*****************************/
+.testimonial{
+	background-color: $dark;
+	padding: 40px;
+	position: relative;
+	.testimonial-quote{
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+	.testimonial-ratings{
+		margin-bottom: 22px;
+		i{
+			font-size: 20px;
+			color: #27292d;
+			margin-right: 2px;
+		}
+	}
+
+	.testimonial-content{
+		i{
+			padding-right: 15px;
+		}
+	}
+	.testimonial-author{
+		margin-top: 25px;
+		display: flex;
+		align-items: center;
+		.testimonial-avatar{
+			display: inline-block;
+			height: 55px;
+			width: 55px;
+			border-radius: $border-radius-full;
+			border: 3px solid $white;
+			margin-right: 30px;
+			img{
+				border-radius: $border-radius-full;
+			}
+		}
+		.testimonial-name{
+			display: flex;
+			align-items: center;
+			color: $white;
+			font-size: 14px;
+			.author-tittle{
+				font-size: 16px;
+				font-weight: 600;
+				color: rgba($white,.5);
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+/*Movies Categories Center*/
+.movies-categories-center{
+	overflow: hidden;
+	.movies-categories-slider {
+	  .owl-stage-outer {
+	    overflow: visible;
+		  .owl-item {
+		   opacity: 0.1;
+		  }
+		  .owl-item.active{
+		    opacity: 1;
+		  }
+	  }
+  }
+}
+

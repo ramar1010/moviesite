@@ -1,0 +1,94 @@
+/*****************************
+  Date time Picker
+*****************************/
+.bootstrap-datetimepicker-widget {
+	table {
+		td.active {
+			background-color: $primary;
+
+			&:hover {
+				background-color: $primary;
+			}
+		}
+
+		td.day {
+			height: 30px;
+			line-height: 30px;
+			width: 40px;
+			font-size: 14px;
+		  border-radius: inherit;
+		  &:hover{
+		  	color: $white;
+		  	background: $primary;
+		  }
+		}
+
+		th {
+			font-size: 14px;
+		}
+
+		td {
+			span.active {
+				background: $primary;
+			}
+
+		}
+
+	}
+
+}
+.bootstrap-datetimepicker-widget.dropdown-menu{
+	width: 19rem;
+	z-index: 9;
+	th{
+		font-size: 14px;
+		height: 35px;
+    line-height: 35px;
+    width: 35px;
+    color: $secondary;
+    font-weight: 500;
+	}
+}
+
+.datetimepickers.time{
+ .bootstrap-datetimepicker-widget {
+ 	table {
+ 		td{
+ 			padding: 0px;
+      a.btn{
+      	background-color: transparent;
+      	color: $secondary;
+      }
+      span{
+      	transition: all 0.3s ease-in-out;
+      	&:hover{
+      		background-color: $primary;
+      		color: $white;
+      	}
+      }
+      &:hover{
+      	background-color: transparent;
+      	color: $secondary;
+      }
+      .btn-primary{
+      	&:hover{
+      		background-color:$secondary;
+      	}
+      }
+ 		}
+ 	 }
+ }
+}
+
+@media (max-width:575px) {
+  .bootstrap-datetimepicker-widget {
+     width: 300px !important;
+     overflow-x:auto !important;
+  }
+}
+@media (max-width:375px) {
+   .bootstrap-datetimepicker-widget {
+     width: 260px !important;
+     overflow-x:auto !important;
+  }
+}

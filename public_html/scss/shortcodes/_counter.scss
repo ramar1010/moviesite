@@ -1,0 +1,76 @@
+/*****************************
+  counter
+*****************************/
+
+.counter{
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba($white,.03);
+  padding: 45px;
+  .counter-icon{
+    margin-bottom: 15px;
+  }
+  .counter-content{
+    span{
+      font-size: 56px;
+      line-height: 1;
+      color: transparent;
+      font-weight: bold;
+      font-family: $font-hedding;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $white;
+    }
+    .plus{
+      margin-right: 10px;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    label{
+      display: block;
+      color: $white;
+      margin-top: 20px;
+      font-size: 24px;
+      font-family: $font-hedding;
+    }
+  }
+}
+
+/*counter-02*/
+.counter.counter-02 {
+  text-align: left;
+  border:none;
+  padding: 0;
+  .counter-content{
+    span{
+      font-size: 24px;
+      line-height: 1;
+      color:$white;
+      font-weight: 400;
+      font-family: $font-hedding;
+      -webkit-text-stroke-width: none;
+      -webkit-text-stroke-color: none;
+    }
+    .plus{
+      margin-right:0px;
+    }
+    label{
+      display: block;
+      color: $white;
+      margin-top: 5px;
+      font-size: 16px;
+      font-family: $font-base;
+    }
+  }
+}
+
+
+@media (max-width:991px) {
+  .counter{
+    padding: 45px 15px;
+    .counter-content{
+      span{
+        font-size: 42px;
+      }
+    }
+  }
+}

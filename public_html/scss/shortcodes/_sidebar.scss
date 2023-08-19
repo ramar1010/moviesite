@@ -1,0 +1,247 @@
+/*****************************
+  Sidebar
+*****************************/
+.sidebar{
+	.widget{
+		background-color: $dark;
+		padding: 30px 25px;
+		margin-bottom: 30px;
+		.widget-title{
+			margin-bottom: 20px;
+			font-weight: 500;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+
+		ul{
+			margin-bottom: 0;
+			list-style-type: none;
+		}
+		textarea.form-control{
+			border-radius: 30px;
+		}
+		.form-check{
+			margin-bottom: 5px;
+		}
+		.movies-year{
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+			li{
+				margin-bottom: 15px;
+				margin-right: 15px;
+				a{
+					font-size: 14px;
+					background-color: $secondary;
+					color: $white;
+					padding: 5px 15px;
+					display: inline-block;
+					&:hover{
+						background-color:$primary;
+					}
+				}
+			}
+		}
+		
+		.recent-post{
+			display: flex;
+			margin-bottom: 25px;
+			.post-img{
+				width: 80px;
+				flex: 0 0 80px;
+				margin-right: 10px;
+			}
+			.post-info{
+				.post-date{
+					font-size: 16px;
+					font-family: $font-base;
+					i{
+						margin-right: 8px;
+					}
+				}
+				a{
+					display: block;
+					margin-top: 6px;
+					.post-title{
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 26px;
+						color: $white;
+						transition: all 0.3s ease-in-out;
+					}
+					&:hover{
+						.post-title{
+							color: $primary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.social-widget{
+		ul{
+			li{
+				padding: 10px;
+				background-color: $secondary;
+				margin-bottom: 15px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+        transition: all 0.3s ease-in-out;
+				a{
+					color: $white;
+					text-transform: capitalize;
+					i{
+						margin-right: 15px;
+					}
+				}
+				.follow{
+					background-color: rgba($white,.04);
+					padding: 5px 10px;
+					color: $white;
+				}
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+			.facebook{
+				&:hover{
+					background-color: #466ca9;
+					.follow{
+						background-color: rgba($white,.1);
+					}
+				}
+			}
+
+			.twitter{
+				&:hover{
+					background-color: #20b5e6;
+					.follow{
+						background-color: rgba($white,.1);
+					}
+				}
+			}
+
+			.youtube{
+				&:hover{
+					background-color: #d92c20;
+					.follow{
+						background-color: rgba($white,.1);
+					}
+				}
+			}
+
+			.instagram{
+				&:hover{
+					background-color: #091c3a;
+					.follow{
+						background-color: rgba($white,.1);
+					}
+				}
+			}
+		}
+	}
+
+	.movies-year-widget{
+		padding-bottom: 15px;
+	}
+	
+	.search-widget{
+		.search{
+			position: relative;
+			.form-control{
+				background-color: $white;
+				height: 65px;
+				color: $black;
+				padding-right: 135px;
+			}
+			.form-control::-moz-placeholder {
+				color: $black;
+			}
+
+			.form-control::-ms-input-placeholder {
+				color: $black;
+			}
+
+			.form-control::-webkit-input-placeholder {
+				color: $black;
+			}
+			.search-btn{
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				font-size: 18px;
+				font-family: $font-hedding;
+				color: $dark;
+				background-color: $primary;
+				padding: 14px 20px;
+				border-radius: inherit;
+				border: none;
+				#Icons{
+					width: 22px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	.tags-widget{
+		padding-bottom: 10px;
+		ul{
+			li{
+				margin-bottom: 20px;
+				/*margin-right: 15px;*/
+				display: inline-block;
+				a{
+					color: $white;
+					padding: 10px 30px;
+					display: block;
+					border: 1px solid $secondary;
+					background-color: $secondary;
+					&:hover{
+						color: $primary;
+						border: 1px solid $primary;
+					}
+				}
+			}
+		}
+	}
+
+	.comments-widget{
+		.commentlist{
+			.comment-content{
+				border: none;
+				padding: 0;
+				margin-left: 0;
+
+				.reviews{
+					margin-bottom: 10px;
+					.meta {
+						strong{
+							color: $white;
+							font-size: 14px;
+							font-weight: normal;
+						}
+					} 
+				} 
+			}
+		} 
+	}
+	
+
+}
+
+@media (max-width:391px) {
+	.sidebar{
+		.widget {
+			.recent-post{
+				display: block;
+				.post-img{
+					margin-bottom: 15px;
+					margin-right: 0;
+				}
+			}
+		}
+	} 
+}

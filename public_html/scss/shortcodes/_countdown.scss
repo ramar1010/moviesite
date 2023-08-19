@@ -1,0 +1,149 @@
+/*****************************
+  Countdown
+*****************************/
+.coming-soon-section{
+  p{
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  h1{
+    font-size: 120px;
+    font-family: $font-hedding;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .countdown-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .countdown{
+      padding: 0 30px;
+      span{
+        font-size: 60px;
+        color: transparent;
+        font-weight: bold;
+        font-family: $font-hedding;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $white;
+      }
+      p{
+        font-size: 24px;
+        font-family: $font-hedding;
+      }
+    }
+  }
+  a{
+    margin: 45px 0px;
+    display: block;
+    color: $white;
+    &:hover{
+      color: $primary;
+    }
+  }
+
+  .form-inline{
+    position: relative;
+    .form-control{
+      height: 60px;
+      color: $dark;
+      background-color: $white;
+      padding-right: 120px;
+      padding-left: 30px;
+      border-radius: $border-radius-md !important;
+    }
+    .form-control::-moz-placeholder {
+      color: $secondary;
+    }
+
+    .form-control::-ms-input-placeholder {
+      color: $secondary;
+    }
+
+    .form-control::-webkit-input-placeholder {
+      color: $secondary;
+    }
+
+    .btn{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 13px 25px;
+      &:hover{
+        color: $white;
+        background-color:$primary;
+      }
+      &:after{
+        background-color:$secondary;
+      }
+    }
+  }
+}
+
+@media (max-width:1200px) {
+  .coming-soon-section {
+    h1{
+      font-size: 70px;
+    }
+    .countdown-box{
+      .countdown {
+        span{
+           font-size: 40px;
+        }
+      }
+    } 
+  }
+}
+
+@media (max-width:991px) {
+  .coming-soon-section {
+    h1{
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .coming-soon-section {
+    h1{
+      font-size: 46px;
+    }
+    .countdown-box{
+      .countdown {
+        span{
+           font-size: 30px;
+        }
+      }
+    } 
+  }
+}
+
+
+
+@media (max-width:575px) {
+  .coming-soon-section {
+    h1{
+      font-size: 36px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .countdown-box{
+      .countdown {
+        padding:0px 10px;
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+
+    a{
+      margin: 20px 0px;
+    }
+  }
+}
